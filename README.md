@@ -7,8 +7,10 @@ the organization will be successful based on the features in the dataset. By pre
 Train, and evaluate the binary classification model, and the following information is obtained.
 
 # Results: 
-As a result, I concluded the optimizer 'Adagrad' performed worst and 'adam' performed the best.  The 'Tanh' was similar. I thought the dropping lowest income column might help, however, the result
-wasn't significant.  Here're the results. note: increasing the learning rate wasn't significant, so I just used the same as the following figure.
+As you can see below,  the optimizer 'Adagrad' performed worst and 'adam' performed the best.  The 'Tanh' was similar, but no significant improvement.
+As the challenge suggested that the dropping the lowest income or highest columns might help, however, the result
+wasn't significant there either. Therefore I concluded that little over 73% is the best outcome.
+Here're the results. note: increasing the learning rate wasn't significant, so I just used the same as the following figure.
 
 ##### activation='relu', Optimizer = 'adam'
 
@@ -33,4 +35,4 @@ wasn't significant.  Here're the results. note: increasing the learning rate was
 |---|---|
 | 0.5517 | 0.7310 | 
 
-#Summary:  As the result, it seems Activation 'adam' and 'tanh' has a similar result little over 0.73, even dropping the low income wasn't very much helpful, also tried 3 highest income columns (shown above), again it wasn't significant. Therefore little over 73% was the best I can come up with although, running lengthy of time improved perhaps a little over 0.01%, but it didn't get much higher.
+#Summary:  As the result, it seems Activation 'adam' and 'tanh' has a similar result little over 0.73, even dropping the low income wasn't very much helpful, also tried 3 highest income columns (shown above), again it wasn't significant. Therefore little over 73% was the best I can come up with although, running lengthy of time improved perhaps a little over 0.01%, but it didn't get much higher.  I also tried different combination or the optimizer or activation, but also didn't see much improvement there.
